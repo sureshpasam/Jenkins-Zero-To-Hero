@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'sureshpasamawsdevops/maven-suresh-docker-agent:latest'
+      image 'sureshpasamawsdevops/maven-sureshpasam-docker-agent:latest'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
