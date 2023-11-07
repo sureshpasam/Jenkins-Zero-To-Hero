@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-        image 'sureshpasamawsdevops/suresh-ci-cd-project:latest'
+        image 'sureshpasamawsdevops/suresh-ci-cd-project'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
