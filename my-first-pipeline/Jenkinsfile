@@ -7,7 +7,7 @@ pipeline {
       steps {
        echo 'Staging Env for Dev'
       }
-    }
+      
     stage('Test') {
       steps {
         sh 'node --version'
