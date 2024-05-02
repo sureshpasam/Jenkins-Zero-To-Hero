@@ -8,15 +8,5 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('Dev Stage'){
-            steps{
-                script{
-                    sh '''
-                    echo 'Deployed the Changes in Dev Env'
-                     '''
-         }
-        } 
-    }
   }
 }
-
