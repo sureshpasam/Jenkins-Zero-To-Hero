@@ -8,5 +8,32 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('DEV'){
+            steps{
+                script{
+                    sh '''
+                    echo 'DEV Success'
+                    '''
+                }
+            }
+        }
+    stage('QA'){
+            steps{
+                script{
+                    sh '''
+                    echo 'QA Success'
+                    '''
+                }
+            }
+        }
+stage('UAT'){
+            steps{
+                script{
+                    sh '''
+                    echo 'UAT Success'
+                    '''
+                }
+            }
+        }
   }
 }
