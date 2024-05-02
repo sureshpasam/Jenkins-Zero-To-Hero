@@ -13,8 +13,10 @@ pipeline {
                 script{
                     sh '''
                     echo 'Deployed the Changes in Dev Env'
+                     '''
          }
-                }           '''
+        } 
+    }
   }
 }
 
