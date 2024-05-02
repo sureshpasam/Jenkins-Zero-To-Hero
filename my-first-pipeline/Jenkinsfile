@@ -3,15 +3,18 @@ pipeline {
     docker { image 'node:16-alpine' }
   }
   stages {
-    stage('Dev') {
-      steps {
-       echo 'Staging Env for Dev'
-      }
-      
     stage('Test') {
       steps {
         sh 'node --version'
       }
     }
+    stage('Dev Stage'){
+            steps{
+                script{
+                    sh '''
+                    echo 'Deployed the Changes in Dev Env'
+         }
+                }           '''
   }
 }
+
